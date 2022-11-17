@@ -1,0 +1,30 @@
+.ref::before {
+    font-weight: bold;
+    
+    content: "Pasa por encima";
+  }
+  .ref::after {
+    opacity: 0;
+    content: "hecho";
+    align-items: center;
+
+  }
+  .ref:hover::before{
+    opacity: 0;
+  }
+  .ref:hover::after{
+    opacity: 1;
+                        
+  }
+
+  button:hover{
+    background-color: green;
+    color: white;
+}
+
+button:active{
+    color: greenyellow;
+}
+ button::selection{
+    content: "hecho";
+ }
